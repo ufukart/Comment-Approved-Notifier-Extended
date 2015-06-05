@@ -4,7 +4,7 @@ Donate link: http://www.ubilisim.com/comment-approved-notifier-extended-wordpres
 Tags: comment, comments, approve, notifier, posts, comment approved
 Requires at least: 2.7
 Tested up to: 4.2.2
-Stable tag: 4.1
+Stable tag: 4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,16 +20,19 @@ Comment Approved Notifier sends an e-mail to your commenters when you approve th
 == Installation ==
 
 1. Download the zip file and extract the contents.
-2. Upload the 'comment-approved-notifier-extended' folder or 'comment-approved-notifier-extended.php' to your plugins directory (wp-content/plugins/).
+2. Upload the 'comment-approved-notifier-extended' folder to your plugins directory (wp-content/plugins/).
 3. Activate the plugin through the 'plugins' page in WordPress.
 4. That is all.
 
 == Frequently Asked Questions ==
 
 = How can I set change from email address? =
-You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 14. row of comment-approved-notifier-extended.php.
+You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 18. row of comment-approved-notifier-extended.php.
 
 == Changelog ==
+
+= 4.2 =
+* Small Improvements
 
 = 4.1 =
 * Minor Optimizations
