@@ -2,14 +2,29 @@
 /*
 Plugin Name: Comment Approved Notifier Extended
 Plugin URI: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
-Description: Send notification to user when comment approved. Comment Approved Notifier Extended is based on original wordpress plugin "Comment Approved Notifier" wich is writen by yakuphan (https://wordpress.org/plugins/comment-approved-notifier/)
+Description: Send notification e-mail to user when comment approved.
 Author: UfukArt
-Version: 4
+Version: 4.1
 Author URI: http://www.ubilisim.com/
 */
+// Load plugin translations
+load_plugin_textdomain('comment-approved-notifier-extended', false, dirname(plugin_basename(__FILE__)) . '/lang');
+// Menu
+/*add_action('admin_menu', 'cane_yonetim');
+function cane_yonetim()
+ {
+ add_options_page('Comment Notifier','Comment Notifier', '8', 'cane', 'cane_funcs');
+ }
+function cane_funcs() {
+echo "<p>";
+echo __('Soon.', 'comment-approved-notifier-extended');
+echo "<br>";
+echo __('<strong>You will see plugin settings from here, as soon</strong>');
+echo "<p>";
+}
+*/
+// Mail
 function ub__send_email($comment) {
-	// Load plugin translations
-	load_plugin_textdomain('comment-approved-notifier-extended', false, dirname(plugin_basename(__FILE__)) . '/lang');
 if (($comment->comment_type == '') && ($comment->comment_author_email != '')) {
 	$to = $comment->comment_author_email;
 	$site_name = get_bloginfo('name');
@@ -32,15 +47,16 @@ if ( substr( $servername, 0, 4 ) == 'www.' ) {
 	$message .= "<br>";
 	$message .= __('You can see your comment from following address', 'comment-approved-notifier-extended');
 	$message .= ";<br>";
-	$message .= get_permalink($comment->comment_post_ID). "#comment-";
-	$message .= $comment->comment_ID."<br><br>";
+	$commentaddress = get_permalink($comment->comment_post_ID). "#comment-".$comment->comment_ID;
+	$message .= "<a href='".$commentaddress."'>".$commentaddress."</a>";
+	$message .= "<br><br>";
 	$message .= __('Your Comment', 'comment-approved-notifier-extended');
 	$message .= ";<br><blockquote>";
 	$message .= $comment->comment_content."</blockquote><br>";
-	$message .= __('Thank you for your comment.', 'comment-approved-notifier-extended');
+	$message .= __('Thanks for your comment.', 'comment-approved-notifier-extended');
 	$message .= "<br>";
 	$message .= $site_name."<br>";
-	$message .= $site_url."<br>";
+	$message .= "<a href='".$site_url."'>".$site_url."</a><br>";
 	$message .= __('(If you didn\'t send this comment, we apologize for this e-mail)', 'comment-approved-notifier-extended');
 	$message .= "</p>";
 	$headers = "From: $site_name <$from_email>\n";

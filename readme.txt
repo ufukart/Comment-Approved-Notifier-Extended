@@ -31,6 +31,9 @@ You can change site email from Wordpress General Settings or change "$site_email
 
 == Changelog ==
 
+= 4.1 =
+* Minor Optimizations
+
 = 4 =
 * Added English Language
 Comment Approved Notifier Extended now supported English and Turkish Language.
