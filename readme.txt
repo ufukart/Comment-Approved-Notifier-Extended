@@ -20,6 +20,7 @@ Comment Approved Notifier sends an e-mail to your commenters when you approve th
 Po file included. If you translated this plugin to your language, please send me translated po file.
 Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
 Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
+http://www.allenati.it/
 
 == Installation ==
 
