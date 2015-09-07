@@ -4,13 +4,13 @@ Plugin Name: Comment Approved Notifier Extended
 Plugin URI: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
 Description: Send notification e-mail to user when comment approved.
 Author: UfukArt
-Version: 4.3
+Version: 4.4
 Author URI: http://www.ubilisim.com/
 */
 // Security
 if (preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF']))
 	{
-		die('You are not allowed to call this page directly.');
+		die('You are not allowed to call this page directly. http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/');
 	}
 // Load plugin translations
 	load_plugin_textdomain('comment-approved-notifier-extended', false, dirname(plugin_basename(__FILE__)) . '/lang');

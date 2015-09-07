@@ -1,10 +1,10 @@
 === Comment Approved Notifier Extended ===
 Contributors: ufukart
 Donate link: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
-Tags: comment, comments, approve, notifier, posts, comment approved
+Tags: comment, comments, approve, notifier, posts, comment approved, approval, message, notification
 Requires at least: 2.7
-Tested up to: 4.2.2
-Stable tag: 4.3
+Tested up to: 4.3
+Stable tag: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,8 @@ Comment Approved Notifier sends an e-mail to your commenters when you approve th
 3. Full Compatible with SMTP Mail Sender Plugins
 
 Po file included. If you translated this plugin to your language, please send me translated po file.
+Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
+Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
 
 == Installation ==
 
@@ -34,7 +36,17 @@ You can change site email from Wordpress General Settings or change "$site_email
 = How can i translate to my language =
 Po file included. If you translated this plugin to your language, please send me translated po file.
 
+== Screenshots ==
+
+1. The plugin sends an e-mail like that.
+
 == Changelog ==
+
+= 4.4 =
+* Added Italian Language
+Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
+Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
+http://www.allenati.it/
 
 = 4.3 =
 * Security Improvements
