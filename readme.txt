@@ -3,12 +3,12 @@ Contributors: ufukart
 Donate link: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
 Tags: comment, comments, approve, notifier, posts, comment approved, approval, message, notification
 Requires at least: 2.7
-Tested up to: 4.3
+Tested up to: 4.3.1
 Stable tag: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically send email notification to comment author after comment approval.
+Automatically send email notification to comment author after comment approved.
 
 == Description ==
 
