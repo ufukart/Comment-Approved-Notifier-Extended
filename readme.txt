@@ -8,18 +8,19 @@ Stable tag: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically send email notification to comment author, after comment approved.
+Automatically send email notification to comment author after comment approval.
 
 == Description ==
 
-Comment Approved Notifier sends an e-mail to your commenters when you approve their comments. It is a very simple plugin. There are no settings or any options. It starts to work when you activate it.
+Comment Approved Notifier sends an e-mail to your commenters when you approve their comments. It is a very simple plugin. There are no settings, options. It starts to work when you activate it.
 1. No Configuration
-1. Activate and Forget
-1. Full Compatible with SMTP Mail Sender Plugins
+2. Activate and Forget
+3. Full Compatible with SMTP Mail Sender Plugins
 
-Po/Pot file included. If you translated this plugin to your language, please send me translated po file.
-Comment Approved Notifier Extended plugin now supported English, Italian and Turkish Language.
-* Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language. http://www.allenati.it/
+Po file included. If you translated this plugin to your language, please send me translated po file.
+Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
+Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
+http://www.allenati.it/
 
 == Installation ==
 
@@ -30,7 +31,7 @@ Comment Approved Notifier Extended plugin now supported English, Italian and Tur
 
 == Frequently Asked Questions ==
 
-= How can I set change "from" email address? =
+= How can I set change from email address? =
 You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 23. row of comment-approved-notifier-extended.php.
 
 = How can i translate to my language =
@@ -38,14 +39,16 @@ Po file included. If you translated this plugin to your language, please send me
 
 == Screenshots ==
 
-1. The plugin sends an e-mail like that.
+1. The plugin sends an TURKISH e-mail like that.
+2. The plugin sends an ENGLISH e-mail like that.
 
 == Changelog ==
 
 = 4.4 =
 * Added Italian Language
 Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
-Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language. http://www.allenati.it/
+Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
+http://www.allenati.it/
 
 = 4.3 =
 * Security Improvements
@@ -61,7 +64,7 @@ Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Itali
 Comment Approved Notifier Extended now supported English and Turkish Language.
 
 = 3.0 =
-* sender e-mail address changed from "noreply" to "admin_email"
+* sender e-mail address changed from noreply to admin_email
 * Added site name to subject
 * Changed text/plain to text/html
 * Codes cleaned.
