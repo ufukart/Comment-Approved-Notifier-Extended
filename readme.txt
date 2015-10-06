@@ -18,9 +18,12 @@ Comment Approved Notifier sends an e-mail to your commenters when you approve th
 3. Full Compatible with SMTP Mail Sender Plugins
 
 Po file included. If you translated this plugin to your language, please send me translated po file.
-Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
+Comment Approved Notifier Extended now supported English, Italian, Romanian and Turkish Language.
+
 Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
 http://www.allenati.it/
+
+Thanks to Edi Mitrea for Romanian language.
 
 == Installation ==
 
@@ -45,10 +48,13 @@ Po file included. If you translated this plugin to your language, please send me
 == Changelog ==
 
 = 4.4 =
-* Added Italian Language
-Comment Approved Notifier Extended now supported English, Italian and Turkish Language.
+* Added Italian and Romanian Language
+Comment Approved Notifier Extended now supported English, Italian, Romanian and Turkish Language.
+
 Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
 http://www.allenati.it/
+
+Thanks to Edi Mitrea for Romanian language.
 
 = 4.3 =
 * Security Improvements
