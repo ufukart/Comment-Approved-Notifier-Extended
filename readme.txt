@@ -23,7 +23,7 @@ Comment Approved Notifier Extended now supported English, Italian, Romanian and 
 Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
 http://www.allenati.it/
 
-Thanks to Edi Mitrea for Romanian language.
+Thanks to Edi Mitrea (Rani) for Romanian language.
 
 == Installation ==
 
@@ -54,7 +54,7 @@ Comment Approved Notifier Extended now supported English, Italian, Romanian and 
 Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
 http://www.allenati.it/
 
-Thanks to Edi Mitrea for Romanian language.
+Thanks to Edi Mitrea (Rani) for Romanian language.
 
 = 4.3 =
 * Security Improvements
