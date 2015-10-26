@@ -56,9 +56,13 @@ http://www.allenati.it/
 
 Thanks to Edi Mitrea (Rani) for Romanian language.
 
-= 4.3 - 4.2 - 4.1 =
+= 4.3 =
 * Security Improvements
+
+= 4.2 =
 * Small Improvements
+
+= 4.1 =
 * Minor Optimizations
 
 = 4 =
