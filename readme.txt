@@ -3,8 +3,8 @@ Contributors: ufukart
 Donate link: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
 Tags: comment, comments, approve, notifier, posts, comment approved, approval, message, notification
 Requires at least: 2.7
-Tested up to: 4.4
-Stable tag: 4.4
+Tested up to: 4.9.4
+Stable tag: 4.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,12 +18,13 @@ Comment Approved Notifier sends an e-mail to your commenters when you approve th
 3. Full Compatible with SMTP Mail Sender Plugins
 
 Po file included. If you translated this plugin to your language, please send me translated po file.
-Comment Approved Notifier Extended now supported English, Italian, Romanian and Turkish Language.
-
-Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
-http://www.allenati.it/
-
-Thanks to Edi Mitrea (Rani) for Romanian language.
+Comment Approved Notifier Extended now supported Multi Language.
+Ready translations:
+English
+French
+Italian
+Romanian
+Turkish
 
 == Installation ==
 
@@ -35,10 +36,10 @@ Thanks to Edi Mitrea (Rani) for Romanian language.
 == Frequently Asked Questions ==
 
 = How can I set change from email address? =
-You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 23. row of comment-approved-notifier-extended.php.
+You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 25. row of comment-approved-notifier-extended.php.
 
 = How can i translate to my language =
-Po file included. If you translated this plugin to your language, please send me translated po file.
+Po file included.
 
 == Screenshots ==
 
@@ -47,14 +48,14 @@ Po file included. If you translated this plugin to your language, please send me
 
 == Changelog ==
 
+= 4.4.2 =
+* MultiLanguage
+
+= 4.4.1 =
+* Prepared for Wordpress Internationalization
+
 = 4.4 =
-* Added Italian and Romanian Language
-Comment Approved Notifier Extended now supported English, Italian, Romanian and Turkish Language.
-
-Thanks to [paologasp](https://wordpress.org/support/profile/paologasp) for Italian language.
-http://www.allenati.it/
-
-Thanks to Edi Mitrea (Rani) for Romanian language.
+* MultiLanguage
 
 = 4.3 =
 * Security Improvements
