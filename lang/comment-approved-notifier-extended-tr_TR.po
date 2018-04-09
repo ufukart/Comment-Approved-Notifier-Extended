@@ -1,51 +1,77 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Comment Approved Notifier Extended\n"
-"POT-Creation-Date: 2015-06-05 14:29+0200\n"
-"PO-Revision-Date: 2015-06-05 14:31+0200\n"
-"Last-Translator: UBilişim <info@ubilisim.com>\n"
-"Language-Team: UBilişim <info@ubilisim.com>\n"
+"POT-Creation-Date: 2018-04-05 16:47+0300\n"
+"PO-Revision-Date: 2018-04-05 16:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: comment-approved-notifier-extended.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: comment-approved-notifier-extended.php:33
+#: comment-approved-notifier-extended.php:26
 msgid "Your Comment is Approved!"
 msgstr "Yorumunuz Onaylandı!"
 
-#: comment-approved-notifier-extended.php:41
+#: comment-approved-notifier-extended.php:34
 msgid "Dear "
 msgstr "Değerli "
 
-#: comment-approved-notifier-extended.php:43
+#: comment-approved-notifier-extended.php:36
 msgid "Your comment is approved to this post"
 msgstr "Bu konuya yaptığınız yorum onaylandı"
 
-#: comment-approved-notifier-extended.php:48
+#: comment-approved-notifier-extended.php:41
 msgid "You can see your comment from following address"
 msgstr "Yorumunuzu aşağıdaki adresten görebilirsiniz"
 
-#: comment-approved-notifier-extended.php:53
+#: comment-approved-notifier-extended.php:46
 msgid "Your Comment"
 msgstr "Yorumunuz"
 
-#: comment-approved-notifier-extended.php:56
+#: comment-approved-notifier-extended.php:49
 msgid "Thanks for your comment."
 msgstr "Yorumunuz için teşekkürler."
 
-#: comment-approved-notifier-extended.php:60
+#: comment-approved-notifier-extended.php:53
 msgid "(If you didn't send this comment, we apologize for this e-mail)"
 msgstr "(Eğer bu yorumu siz göndermediyseniz, bu eposta için özür dileriz)"
+
+#. Plugin Name of the plugin/theme
+msgid "Comment Approved Notifier Extended"
+msgstr "Yorum Onay Bildirgeci"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-"
+"plugin/"
+msgstr ""
+"http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-"
+"plugin/"
+
+#. Description of the plugin/theme
+msgid "Send notification e-mail to user when comment approved."
+msgstr "Yorumu onaylandığında kullanıcıya bildirim e-postası gönderin."
+
+#. Author of the plugin/theme
+msgid "UfukArt"
+msgstr "UfukArt"
+
+#. Author URI of the plugin/theme
+msgid "http://www.ubilisim.com/"
+msgstr "http://www.ubilisim.com/"
 
 #~ msgid "Soon."
 #~ msgstr "Yakında."
