@@ -1,10 +1,11 @@
 === Comment Approved Notifier Extended ===
 Contributors: ufukart
-Donate link: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
+Donate link: https://donate.stripe.com/7sIcQlbaR4rc7qobII
 Tags: comment, comments, approve, notifier, posts, comment approved, approval, message, notification
-Requires at least: 2.7
-Tested up to: 5.0
-Stable tag: 4.4.2
+Requires at least: 5.0
+Tested up to: 6.1.1
+Requires PHP: 5.6
+Stable tag: 5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +37,7 @@ Turkish
 == Frequently Asked Questions ==
 
 = How can I set change from email address? =
-You can change site email from Wordpress General Settings or change "$site_email = get_bloginfo('admin_email');" to "$site_email = 'yourmailadress@yourdomain.com';" from 25. row of comment-approved-notifier-extended.php.
+You can change site email from Wordpress General Settings or change "$from_email = get_bloginfo('admin_email');" to "$from_email = 'yourmailadress@yourdomain.com';" from 115. row of comment-approved-notifier-extended.php.
 
 = How can i translate to my language =
 Po file included.
@@ -47,6 +48,19 @@ Po file included.
 2. The plugin sends an ENGLISH e-mail like that.
 
 == Changelog ==
+
+= 5.2 =
+* Added mail template. Sent emails look better now
+* Fully compatible with PHP 5.6 and above. Tested up to: PHP 8.2
+* Few minor improvements
+
+= 5.1 =
+* Bug Fixed. (Email sending issue solved.)
+
+= 5 =
+* Refactored codes.
+* Added Mail Subject and Title Editor.
+* Added Shortcodes
 
 = 4.4.2 =
 * MultiLanguage
