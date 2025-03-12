@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Comment Approved Notifier Extended\n"
-"POT-Creation-Date: 2018-04-05 16:44+0300\n"
-"PO-Revision-Date: 2018-04-05 16:43+0300\n"
+"POT-Creation-Date: 2019-01-29 14:21+0300\n"
+"PO-Revision-Date: 2019-01-29 14:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: comment-approved-notifier-extended.php\n"
@@ -21,32 +21,56 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: comment-approved-notifier-extended.php:26
-msgid "Your Comment is Approved!"
+#: comment-approved-notifier-extended.php:80
+msgid "Comment Approved Notifier Settings"
 msgstr ""
 
-#: comment-approved-notifier-extended.php:34
-msgid "Dear "
+#: comment-approved-notifier-extended.php:81
+msgid "Shortcode List"
 msgstr ""
 
-#: comment-approved-notifier-extended.php:36
-msgid "Your comment is approved to this post"
+#: comment-approved-notifier-extended.php:83
+msgid "You can use this shortcodes in your mail title or mail body."
 msgstr ""
 
-#: comment-approved-notifier-extended.php:41
-msgid "You can see your comment from following address"
+#: comment-approved-notifier-extended.php:85
+msgid "Comment Author Name:"
 msgstr ""
 
-#: comment-approved-notifier-extended.php:46
-msgid "Your Comment"
+#: comment-approved-notifier-extended.php:86
+msgid "Commented Post Title:"
 msgstr ""
 
-#: comment-approved-notifier-extended.php:49
-msgid "Thanks for your comment."
+#: comment-approved-notifier-extended.php:87
+msgid "Comment Link:"
 msgstr ""
 
-#: comment-approved-notifier-extended.php:53
-msgid "(If you didn't send this comment, we apologize for this e-mail)"
+#: comment-approved-notifier-extended.php:88
+msgid "Comment:"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:89
+msgid "Blog Name:"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:90
+msgid "Blog URL:"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:94
+msgid "Comment Approved Notifier"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:95
+msgid "Mail Subject"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:96
+msgid "Mail Body"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:97
+msgid "Update"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
