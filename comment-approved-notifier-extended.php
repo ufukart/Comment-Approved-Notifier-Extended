@@ -4,10 +4,10 @@
 	Plugin URI: http://www.ubilisim.com/comment-approved-notifier-extended-wordpress-plugin/
 	Description: Send notification e-mail to user when comment approved.
 	Author: UfukArt
-	Version: 5.2
+	Version: 5.3
 	Domain Path: /lang
 	Text Domain: comment-approved-notifier-extended
-	Author URI: http://www.ubilisim.com/
+	Author URI: https://www.zumbo.net
 */
 // Security
 defined( 'ABSPATH' ) or exit;
@@ -47,12 +47,16 @@ function cane_default_message_delete()
 register_deactivation_hook( __FILE__, 'cane_default_message_delete' );
 
 // if default subject and body have been deleted for any reason
-if(!get_option('cane_default_message_subject')){
-	update_option('cane_default_message_subject', cane_default_message_subject);
+$options = [
+    'cane_default_message_subject' => cane_default_message_subject,
+    'cane_default_message_body' => cane_default_message_body
+];
+foreach ($options as $key => $value) {
+    if (!get_option($key)) {
+        update_option($key, $value);
+    }
 }
-if(!get_option('cane_default_message_body')){
-	update_option('cane_default_message_body', cane_default_message_body);
-}
+
 if (is_admin()) {
 	// Add Menu To Wordpress
 	add_action('admin_menu', 'comment_approved_notifier_extended_menu');
@@ -67,15 +71,15 @@ if (is_admin()) {
 		if(!empty($_POST['action'])=='update'){
 		// Wp_nonce check
 			if (!isset($_POST['comment_approved_notifier_extended_update']) || ! wp_verify_nonce( $_POST['comment_approved_notifier_extended_update'], 'comment_approved_notifier_extended_update')) {
-				echo 'Sorry, you do not have access to this page! https://www.ubilisim.com/missed-schedule-post-publisher-wordpress-plugin/';
-				exit;
+				wp_die(__('Sorry, you do not have access to this page!', 'comment-approved-notifier-extended'));
 			}else{
 				$cane_default_message_subject = sanitize_text_field($_POST['cane_default_message_subject']);
 				$cane_default_message_body = sanitize_textarea_field($_POST['cane_default_message_body']);
 				update_option('cane_default_message_subject', $cane_default_message_subject);
 				update_option('cane_default_message_body', $cane_default_message_body);
 				echo '<div id="setting-error-settings_updated" class="notice notice-success settings-error is-dismissible"> 
-<p><strong>Settings saved.</strong></p></div>';
+<p><strong>' . esc_html__('Settings saved.', 'comment-approved-notifier-extended') . '</strong></p></div>';
+
 			}
 		}
 	?>
@@ -94,8 +98,12 @@ if (is_admin()) {
 	</div>
 	<link rel="stylesheet" href="<?php echo  plugins_url().'/'.dirname(plugin_basename(__FILE__));?>/css/style.css" type="text/css" />
 	<form class="formoid-metro-cyan" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post"><div class="title"><h2><?php echo __('Comment Approved Notifier', 'comment-approved-notifier-extended');?></h2></div>
-		<div class="element-input"><label for="cane_default_message_subject" class="title"><?php echo __('Mail Subject', 'comment-approved-notifier-extended');?></label><input class="large" type="text" name="cane_default_message_subject" id="cane_default_message_subject" value="<?php echo get_option('cane_default_message_subject');?>" /></div>
-		<div class="element-textarea"><label for="cane_default_message_body" class="title"><?php echo __('Mail Body', 'comment-approved-notifier-extended');?></label><textarea class="medium" name="cane_default_message_body" id="cane_default_message_body" cols="20" rows="5" ><?php echo stripslashes(get_option('cane_default_message_body'));?></textarea></div>
+		<div class="element-input"><label for="cane_default_message_subject" class="title"><?php echo __('Mail Subject', 'comment-approved-notifier-extended');?></label><input class="large" type="text" name="cane_default_message_subject" id="cane_default_message_subject" value="<?php echo esc_attr(get_option('cane_default_message_subject'));?>" />
+</div>
+		<div class="element-textarea"><label for="cane_default_message_body" class="title"><?php echo __('Mail Body', 'comment-approved-notifier-extended');?></label><textarea class="medium" name="cane_default_message_body" id="cane_default_message_body" cols="20" rows="5">
+<?php echo esc_textarea(get_option('cane_default_message_body'));?></textarea>
+
+</div>
 	<div class="submit"><input type="submit" value="<?php echo __('Update', 'comment-approved-notifier-extended');?>"/></div>
 	<input type="hidden" name="action" value="update">
 	<?php wp_nonce_field('comment_approved_notifier_extended_update','comment_approved_notifier_extended_update');?>
