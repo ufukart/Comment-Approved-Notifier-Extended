@@ -1,11 +1,11 @@
 === Comment Approved Notifier Extended ===
 Contributors: ufukart
-Donate link: https://donate.stripe.com/7sIcQlbaR4rc7qobII
-Tags: comment, comments, approve, notifier, posts, comment approved, approval, message, notification
+Donate link: https://www.paypal.com/donate/?business=53EHQKQ3T87J8&no_recurring=0&currency_code=USD
+Tags: comment, approve, notifier, comment approved, notification
 Requires at least: 5.0
-Tested up to: 6.1.1
+Tested up to: 6.7.1
 Requires PHP: 5.6
-Stable tag: 5.2
+Stable tag: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,7 +49,12 @@ Po file included.
 
 == Changelog ==
 
+= 5.3 =
+Cross Site Scripting (XSS) vulnerability resolved
+
 = 5.2 =
+* Menu moved under the setting
+* Added donate link
 * Added mail template. Sent emails look better now
 * Fully compatible with PHP 5.6 and above. Tested up to: PHP 8.2
 * Few minor improvements
