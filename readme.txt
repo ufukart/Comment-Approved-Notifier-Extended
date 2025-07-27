@@ -1,111 +1,144 @@
-=== Comment Approved Notifier Extended ===
-Contributors: ufukart
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?business=53EHQKQ3T87J8&no_recurring=0&currency_code=USD)
-Tags: comment, approve, notifier, comment approved, notification
-Requires at least: 5.0
-Tested up to: 6.7.1
-Requires PHP: 5.6
-Stable tag: 5.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Comment Approved Notifier Extended
 
-Automatically send email notification to comment author after comment approval.
+**Contributors:** [ufukart](https://github.com/ufukart)  
+**Donate link:** [Donate via PayPal](https://www.paypal.com/donate/?business=53EHQKQ3T87J8&no_recurring=0&currency_code=USD)  
+**Tags:** comment, approve, notifier, comment approved, notification  
+**Requires at least:** WordPress 5.0  
+**Tested up to:** WordPress 6.8  
+**Requires PHP:** 5.6  
+**Stable tag:** 5.3  
+**License:** GPLv2 or later  
+**License URI:** [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
 
-== Description ==
+A WordPress plugin that sends automatic email notifications to users when their comment is approved, with customizable content.
 
-Comment Approved Notifier sends an e-mail to your commenters when you approve their comments. It is a very simple plugin. There are no settings, options. It starts to work when you activate it.
-1. No Configuration
-2. Activate and Forget
-3. Full Compatible with SMTP Mail Sender Plugins
+---
 
-Po file included. If you translated this plugin to your language, please send me translated po file.
-Comment Approved Notifier Extended now supported Multi Language.
-Ready translations:
-English
-French
-Italian
-Romanian
-Turkish
+## Description
 
-== Installation ==
+**Comment Approved Notifier Extended** automatically notifies comment authors via email once their comment is approved on your website. This plugin improves engagement by informing users when their input goes live.
 
-1. Download the zip file and extract the contents.
-1. Upload the 'comment-approved-notifier-extended' folder to your plugins directory (wp-content/plugins/).
-1. Activate the plugin through the 'plugins' page in WordPress.
-1. That is all.
+## Features
 
-== Frequently Asked Questions ==
+- ✅ Sends a customizable notification email when a comment is approved.
+- ✅ Includes shortcodes to personalize the email content (e.g., comment author name, post title, comment link).
+- ✅ Easy-to-use settings page for managing email content.
+- ✅ Fully translatable with language files.
 
-= How can I set change from email address? =
-You can change site email from Wordpress General Settings or change "$from_email = get_bloginfo('admin_email');" to "$from_email = 'yourmailadress@yourdomain.com';" from 115. row of comment-approved-notifier-extended.php.
+---
 
-= How can i translate to my language =
-Po file included.
+## Installation
 
-== Screenshots ==
+1. Go to **Plugins > Add New** in your WordPress dashboard.
+2. Search for **Comment Approved Notifier Extended** or upload the plugin `.zip` file.
+3. Click **Install Now**, then **Activate** the plugin.
 
-1. The plugin sends an TURKISH e-mail like that.
-2. The plugin sends an ENGLISH e-mail like that.
+### Configure Settings
 
-== Changelog ==
+1. After activation, navigate to **Settings > Comment Approved Notifier**.
+2. Edit the email subject and message body.
+3. Use shortcodes to personalize the message:
+    - `[commentauthor]`: Name of the comment author
+    - `[commentedposttitle]`: Title of the post
+    - `[commentaddress]`: Direct link to the comment
+    - `[commentcontent]`: Comment content
+    - `[blogname]`: Your site name
+    - `[blogurl]`: Your site URL
 
-= 5.3 =
-Cross Site Scripting (XSS) vulnerability resolved
+---
 
-= 5.2 =
-* Menu moved under the setting
-* Added donate link
-* Added mail template. Sent emails look better now
-* Fully compatible with PHP 5.6 and above. Tested up to: PHP 8.2
-* Few minor improvements
+## FAQ
 
-= 5.1 =
-* Bug Fixed. (Email sending issue solved.)
+### How do I customize the email notification?
+Go to **Settings > Comment Approved Notifier** and edit the subject and body. Shortcodes are available for dynamic content.
 
-= 5 =
-* Refactored codes.
-* Added Mail Subject and Title Editor.
-* Added Shortcodes
+### What shortcodes can I use?
+- `[commentauthor]`
+- `[commentedposttitle]`
+- `[commentaddress]`
+- `[commentcontent]`
+- `[blogname]`
+- `[blogurl]`
 
-= 4.4.2 =
-* MultiLanguage
+### Can I use HTML in the email body?
+Yes, HTML is supported in the email body for better formatting.
 
-= 4.4.1 =
-* Prepared for Wordpress Internationalization
+### Will the plugin notify for all comments?
+Only approved comments trigger the email. Pending or spam comments are ignored.
 
-= 4.4 =
-* MultiLanguage
+### What happens if I deactivate the plugin?
+Notifications will no longer be sent, but previously sent messages remain unaffected.
 
-= 4.3 =
-* Security Improvements
+### Is it compatible with all themes?
+Yes, it works independently of the theme. Requires WordPress 4.0+.
 
-= 4.2 =
-* Small Improvements
+### Can I add more shortcodes?
+Currently, only predefined shortcodes are supported. Advanced users can extend the plugin.
 
-= 4.1 =
-* Minor Optimizations
+---
 
-= 4 =
-* Added English Language
-Comment Approved Notifier Extended now supported English and Turkish Language.
+## Changelog
 
-= 3.0 =
-* sender e-mail address changed from noreply to admin_email
-* Added site name to subject
-* Changed text/plain to text/html
-* Codes cleaned.
+### 5.3
+- Resolved Cross Site Scripting (XSS) vulnerability
 
-= 2.2 =
-* Add site name to "From" section (by yakuphan)
+### 5.2
+- Moved menu under Settings
+- Added donation link
+- Introduced email template for better design
+- Full PHP 5.6+ compatibility, tested up to PHP 8.2
+- Minor improvements
 
-= 2.1 =
-* Compatible up to WP 2.8 (by yakuphan)
+### 5.1
+- Fixed email sending bug
 
-= 2.0 =
-* Compatible up to WP 2.7 (by yakuphan)
+### 5.0
+- Major code refactoring
+- Added subject & title editor
+- Introduced shortcodes
 
-= 1.1 =
-* Fixed some bugs. Older version sends e-mail to trackback commenters so please update. (by yakuphan)
+### 4.4.2
+- Multilanguage support
 
-= 1.0 =
-* Plugin released. (by yakuphan)
+### 4.4.1
+- Prepared for internationalization
+
+### 4.3
+- Security improvements
+
+### 4.2
+- Minor enhancements
+
+### 4.1
+- Optimizations
+
+### 4.0
+- Added English language support
+- Now supports both English and Turkish
+
+### 3.0
+- Changed sender from `noreply` to `admin_email`
+- Added site name to subject
+- Switched from plain text to HTML emails
+- Code cleanup
+
+### 2.2
+- Added site name in "From" address (by yakuphan)
+
+### 2.1
+- Compatible with WordPress 2.8 (by yakuphan)
+
+### 2.0
+- Compatible with WordPress 2.7 (by yakuphan)
+
+### 1.1
+- Fixed bug where emails were sent to trackbacks (by yakuphan)
+
+### 1.0
+- Initial release (by yakuphan)
+
+---
+
+## License
+
+This plugin is licensed under the [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html).
