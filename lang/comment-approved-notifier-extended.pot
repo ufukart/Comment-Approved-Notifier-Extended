@@ -1,1 +1,183 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Comment Approved Notifier Extended\n"
+"POT-Creation-Date: 2026-02-15 19:19-0500\n"
+"PO-Revision-Date: 2026-02-15 19:19-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: comment-approved-notifier-extended.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: comment-approved-notifier-extended.php:40
+msgid "Your comment has been approved!"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:46
+msgid ""
+"Dear [commentauthor],\n"
+"\n"
+"Your comment has been approved for the following post:\n"
+"[commentedposttitle]\n"
+"\n"
+"You can view your comment at the link below:\n"
+"[commentaddress]\n"
+"\n"
+"Your comment:\n"
+"[commentcontent]\n"
+"\n"
+"Thank you for contributing to our discussion.\n"
+"\n"
+"Best regards,\n"
+"[blogname]\n"
+"[blogurl]\n"
+"\n"
+"If you did not submit this comment, please disregard this email."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:73
+msgid "Settings"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:119
+#: comment-approved-notifier-extended.php:120
+#: comment-approved-notifier-extended.php:174
+msgid "Comment Approved Notifier"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:134
+msgid "Sorry, you do not have permission to access this page."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:142
+msgid "Sorry, your session has expired. Please try again."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:156
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:176
+msgid "Configure email notifications for approved comments"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:186
+msgid "Email Template Settings"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:194
+msgid "Email Subject"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:201
+msgid "e.g., Your comment on [commentedposttitle] has been approved!"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:203
+msgid "This will be the subject line of the notification email"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:209
+msgid "Email Body"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:214
+msgid "Write your email message here..."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:216
+msgid ""
+"HTML tags are allowed. Use the shortcodes from the sidebar to personalize "
+"your message."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:222
+msgid "Save Changes"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:226
+msgid "Reset"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:244
+msgid "Available Shortcodes"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:249
+msgid "Click on a shortcode to copy it to clipboard"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:254
+msgid "Comment Author"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:258
+msgid "Post Title"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:262
+msgid "Comment Link"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:266
+msgid "Comment Content"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:270
+msgid "Blog Name"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:274
+msgid "Blog URL"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:286
+msgid "Need Help?"
+msgstr ""
+
+#: comment-approved-notifier-extended.php:291
+msgid ""
+"This plugin automatically sends email notifications to comment authors when "
+"their comments are approved."
+msgstr ""
+
+#: comment-approved-notifier-extended.php:294
+msgid ""
+"Use the shortcodes above to personalize your email messages. They will be "
+"automatically replaced with actual content when the email is sent."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Comment Approved Notifier Extended"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://www.zumbo.net/comment-approved-notifier-extended-wordpress-plugin/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Sends email notifications to comment authors when their comments are "
+"approved. Zero bloat, single purpose plugin."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "UfukArt"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.zumbo.net"
+msgstr ""
