@@ -229,7 +229,7 @@ phpcbf --standard=WordPress comment-approved-notifier-extended.php
 
 ## 📝 Changelog
 
-### Version 5.5 (Current)
+### Version 5.4
 - ✨ Enhanced code documentation with PHPDoc blocks
 - ✨ Better error handling and logging
 - ✨ Consistent escape function usage
@@ -237,8 +237,6 @@ phpcbf --standard=WordPress comment-approved-notifier-extended.php
 - 🔒 Improved nonce error messages
 - 🎨 Better code formatting and WordPress standards compliance
 - ⚡ More efficient array declarations
-
-### Version 5.4
 - 🔒 Fixed XSS vulnerability
 - ✨ Added email validation
 - ✨ Added error logging
